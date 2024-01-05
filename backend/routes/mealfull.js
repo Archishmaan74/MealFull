@@ -15,4 +15,15 @@ dbClient.connect(dbUrl,(err,connection)=>{
     }
 })
 
+router.get('/fooditems',(req,res)=>{
+    dbConnection.collection('food').find({}).toArray((err,data)=>{
+        if(err){
+            console.log("Cannot fetch food items...");
+        }
+        else{
+            res.send(data);
+        }
+    })
+})
+
 module.exports = router
