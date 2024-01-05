@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MealfullService } from '../mealfull.service';
 
 @Component({
   selector: 'app-fooditems',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./fooditems.component.css']
 })
 export class FooditemsComponent {
-
+  food: any=[]
+  constructor(private mealfullService: MealfullService){
+    this.mealfullService.getAllItems().subscribe((data)=>{
+      this.food = data
+    },(err)=>{
+      console.log("Cannot fetch getAllitems...");
+    })
+  }
 }
