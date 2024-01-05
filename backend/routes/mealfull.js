@@ -26,4 +26,15 @@ router.get('/fooditems',(req,res)=>{
     })
 })
 
+router.get('/dietchart',(req,res)=>{
+    dbConnection.collection('dietchart').find({}).toArray((err,data)=>{
+        if(err){
+            console.log("Cannot fetch chart items...");
+        }
+        else{
+            res.send(data);
+        }
+    })
+})
+
 module.exports = router
