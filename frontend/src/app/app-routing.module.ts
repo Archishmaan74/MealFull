@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AddfoodComponent } from './addfood/addfood.component';
 import { ChartComponent } from './chart/chart.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
+import { FooditemsComponent } from './fooditems/fooditems.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,9 @@ const routes: Routes = [
   },
   {
     path: 'home',  component: HomeComponent
+  },
+  {
+    path: 'fooditems', component: FooditemsComponent 
   },
   {
     path: 'add', component: AddfoodComponent
