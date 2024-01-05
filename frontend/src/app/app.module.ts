@@ -8,7 +8,8 @@ import { FooditemsComponent } from './fooditems/fooditems.component';
 import { ChartComponent } from './chart/chart.component';
 import { AddfoodComponent } from './addfood/addfood.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ErrorpageComponent } from './errorpage/errorpage.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http'
     HomeComponent,
     FooditemsComponent,
     ChartComponent,
-    AddfoodComponent
+    AddfoodComponent,
+    ErrorpageComponent
   ],
   imports: [
     BrowserModule,
