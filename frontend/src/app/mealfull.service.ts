@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,11 @@ import { Injectable } from '@angular/core';
 })
 export class MealfullService {
 
-  constructor() { }
+  constructor(private httpclient: HttpClient){
+
+  }
+
+  getAllItems(){
+    return this.httpclient.get('http://localhost:3000/fooditems')
+  }
 }
