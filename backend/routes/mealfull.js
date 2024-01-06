@@ -61,6 +61,20 @@ router.post('/addtochart',(req,res)=>{
     })
 })
 
+router.post('/addtoitems',(req,res)=>{
+    dbConnection.collection('food').find({sno:req.body.sno}).toArray((err,data)=>{
+        if(err){
+            console.log("Cannot add items to food-items...");
+        }
+        else{
+            dbConnection.collection('food').insertOne({
+                ...req.body
+            })
+            res.send("Inserted to food-items...")
+        }
+    })
+})
+
 router.post('/delete',(req,res)=>{
     console.log("Delete API getting hit...");
     dbConnection.collection('dietchart').find({sno:req.body.sno}).toArray((err,data)=>{
@@ -76,6 +90,19 @@ router.post('/delete',(req,res)=>{
                 dbConnection.collection('dietchart').updateOne({sno:req.body.sno},{$inc:{quantity:-1}})
                 res.send("Quantity decreased...")
             }
+        }
+    })
+})
+
+router.post('/deleteall',(req,res)=>{
+    console.log("Delete all API getting hit...");
+    dbConnection.collection('dietchart').find({}).toArray((err,data)=>{
+        if(err){
+            console.log("Cannot delete all items from chart...");
+        }
+        else{
+            dbConnection.collection('dietchart').deleteMany({})
+            res.send("Emptied chart...")
         }
     })
 })
