@@ -39,4 +39,14 @@ export class ChartComponent {
     }
     return total
   }
+
+  deleteItem(food: any){
+    this.mealfullService.deleteItem(food).subscribe(food)
+    alert("Item deleted from chart!")
+    location.reload()
+  }
+
+  deleteAll(food: any){
+    this.mealfullService.deleteAll(food).subscribe(food)
+  }
 }

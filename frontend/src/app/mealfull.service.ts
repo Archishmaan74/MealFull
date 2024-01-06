@@ -25,4 +25,12 @@ export class MealfullService {
   deleteItem(food: any){
     return this.httpclient.post('http://localhost:3000/delete',food)
   }
+
+  addtoFoodItems(food: any){
+    return this.httpclient.post('http://localhost:3000/addtoitems',food)
+  }
+
+  deleteAll(food: any){
+    return this.httpclient.post('http://localhost:3000/deleteall',food)
+  }
 }

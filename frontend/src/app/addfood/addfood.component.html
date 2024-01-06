@@ -1,1 +1,10 @@
-<p>addfood works!</p>
+<div class="container" style="background-color: blanchedalmond; text-align: center; margin-top: 100px;">
+    <div><br><br>
+        Sno: <input type="number" [(ngModel)]="food.sno" required><br><br>
+        Food Name: <input style="margin-right: 55px;" type="text" [(ngModel)]="food.foodName" required><br><br>
+        Corrected Name: <input style="margin-right: 87px;" type="text" [(ngModel)]="food.correctedTerm" required><br><br>
+        Calories: <input style="margin-right: 25px;" type="number" [(ngModel)]="food.calories" required><br><br>
+        Carbohydrates: <input style="margin-right: 75px;" type="number" [(ngModel)]="food.carbs" required><br><br>
+        <button (click)="addtoFoodItems(food)" [routerLink]="['/fooditems']" style="margin-left: 20px;" class="btn btn-primary">Add</button><br><br>
+    </div>
+</div>
