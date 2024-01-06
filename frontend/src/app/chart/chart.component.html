@@ -1,1 +1,31 @@
-<p>chart works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <table class="table table-striped" style="box-shadow: 10px 10px 5px grey;">
+                <thead>
+                    <tr>
+                        <th>Sno.</th>
+                        <th>Food</th>
+                        <th>Calories</th>
+                        <th>Carbs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let f of food">
+                        <td>{{f.sno}}</td>
+                        <td>{{f.foodName}}</td>
+                        <td>{{f.calories}}</td>
+                        <td>{{f.carbs}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <div class="card" style="background-color:rgb(231, 195, 18); height: 100px; width: 400px; text-align: center; box-shadow: 10px 10px 5px grey;">
+                <div class="card-body">
+                    <h5>Calculator:</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

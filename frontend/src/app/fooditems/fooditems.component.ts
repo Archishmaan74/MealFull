@@ -15,4 +15,10 @@ export class FooditemsComponent {
       console.log("Cannot fetch getAllitems...");
     })
   }
+
+  addtoChart(food: any){
+    this.mealfullService.addtoChart(food).subscribe(food)
+    alert("Item added to chart!")
+    location.reload();
+  }
 }
