@@ -21,4 +21,8 @@ export class MealfullService {
   addtoChart(food: any){
     return this.httpclient.post('http://localhost:3000/addtochart',food)
   }
+
+  deleteItem(food: any){
+    return this.httpclient.post('http://localhost:3000/delete',food)
+  }
 }
