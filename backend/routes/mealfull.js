@@ -37,4 +37,25 @@ router.get('/dietchart',(req,res)=>{
     })
 })
 
+router.post('/addtochart',(req,res)=>{
+    dbConnection.collection('dietchart').find({sno:req.body.sno}).toArray((err,data)=>{
+        if(err){
+            console.log("Cannot add to chart...");
+        }
+        else{
+            if(data.length == 0){
+                dbConnection.collection('dietchart').insertOne({
+                    ...req.body,
+                    quantity:1
+                })
+                res.send("Item inserted to chart...")
+            }
+            else{
+                dbConnection.collection('dietchart').updateOne({sno:req.body.sno},{$inc:{quantity:+1}})
+                res.send("Updated quantity...")
+            }
+        }
+    })
+})
+
 module.exports = router
