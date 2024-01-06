@@ -15,4 +15,28 @@ export class ChartComponent {
       console.log("Cannot fetch data to chart...");
     })
   }
+
+  createChart(){
+    alert("Thanks for using this application but the chart creation & mailing will be added soon...Have a nice day!")
+  }
+
+  caloriesCounter(){
+    let total=0
+    for(let i=0; i < this.food.length; i++){
+      if(this.food[i].calories){
+        total = total + this.food[i].calories * this.food[i].quantity;
+      }
+    }
+    return total
+  }
+
+  carbsCounter(){
+    let total = 0
+    for(let i=0; i < this.food.length; i++){
+      if(this.food[i].carbs){
+        total = total + this.food[i].carbs * this.food[i].quantity;
+      }
+    }
+    return total
+  }
 }
