@@ -16,6 +16,7 @@ dbClient.connect(dbUrl,(err,connection)=>{
 })
 
 router.get('/fooditems',(req,res)=>{
+    console.log("display food API getting hit...");
     dbConnection.collection('food').find({}).toArray((err,data)=>{
         if(err){
             console.log("Cannot fetch food items...");
@@ -27,6 +28,7 @@ router.get('/fooditems',(req,res)=>{
 })
 
 router.get('/dietchart',(req,res)=>{
+    console.log("display itmes in chart API getting hit...");
     dbConnection.collection('dietchart').find({}).toArray((err,data)=>{
         if(err){
             console.log("Cannot fetch chart items...");
@@ -38,6 +40,7 @@ router.get('/dietchart',(req,res)=>{
 })
 
 router.post('/addtochart',(req,res)=>{
+    console.log("Add API getting hit...");
     dbConnection.collection('dietchart').find({sno:req.body.sno}).toArray((err,data)=>{
         if(err){
             console.log("Cannot add to chart...");
