@@ -61,4 +61,23 @@ router.post('/addtochart',(req,res)=>{
     })
 })
 
+router.post('/delete',(req,res)=>{
+    console.log("Delete API getting hit...");
+    dbConnection.collection('dietchart').find({sno:req.body.sno}).toArray((err,data)=>{
+        if(err){
+            console.log("Cannot delete item...");
+        }
+        else{
+            if(data[0].quantity==1){
+                dbConnection.collection('dietchart').deleteOne({sno:req.body.sno})
+                res.send("Item deleted from chart...")
+            }
+            else{
+                dbConnection.collection('dietchart').updateOne({sno:req.body.sno},{$inc:{quantity:-1}})
+                res.send("Quantity decreased...")
+            }
+        }
+    })
+})
+
 module.exports = router
