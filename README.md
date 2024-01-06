@@ -16,4 +16,19 @@ To test, contribute or just see what we did follow few easy steps:
 MEAN stack website of restaurant franchise.Properties provided:- <br />
 - Single Page Application (used AngularJS routing)
 - Used guard for authentication
-- Database Maintaned for Food-item,chart,add food-items (using mongodb)
+- Database Maintaned named as Foodie and collections as food & dietchart (using mongodb)
+
+Database structure:- <br />
+- {
+  "foodName": "Tomato Mozzarella Flatbread",
+  "calories": 350,
+  "carbs": 35,
+  "sno": 2
+  }
+- {
+  "foodName": "Half Italian",
+  "calories": 440,
+  "correctedTerm": "Half Size Italian on Hoagie Roll",
+  "carbs": 38,
+  "sno": 6
+  }   
