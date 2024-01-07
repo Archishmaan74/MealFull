@@ -40,6 +40,11 @@ export class ChartComponent {
     return total
   }
 
+  addToChart(food: any){
+    this.mealfullService.addtoChart(food).subscribe(food)
+    location.reload();
+  }
+
   deleteItem(food: any){
     this.mealfullService.deleteItem(food).subscribe(food)
     alert("Item deleted from chart!")
