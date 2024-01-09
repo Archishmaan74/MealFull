@@ -37,7 +37,7 @@ Database structure:- <br />
 
   ![Screenshot 2024-01-09 123419](https://github.com/Archishmaan74/MealFull/assets/59467495/bdb54b68-d7b1-416e-8a48-e3827cbbae3e)
   
-  ![Screenshot 2024-01-09 123455](https://github.com/Archishmaan74/MealFull/assets/59467495/d9273f21-75be-45a7-a290-1445c5b188ea)
+  ![newfooditems](https://github.com/Archishmaan74/MealFull/assets/59467495/91c651b3-eed5-489a-bb15-75b1fe143722)
   
   ![Screenshot 2024-01-09 123604](https://github.com/Archishmaan74/MealFull/assets/59467495/de2488d0-5bff-41f3-aa34-52a6b009d87f)
 
