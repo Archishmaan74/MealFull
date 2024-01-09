@@ -62,6 +62,7 @@ router.post('/addtochart',(req,res)=>{
 })
 
 router.post('/addtoitems',(req,res)=>{
+    console.log("Add items to chart API getting hit...");
     dbConnection.collection('food').find({sno:req.body.sno}).toArray((err,data)=>{
         if(err){
             console.log("Cannot add items to food-items...");
