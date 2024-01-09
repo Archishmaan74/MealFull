@@ -37,7 +37,7 @@ Admin Credentials:- <br />
 - Username = "Archishmaan"
 - Password = "12345"
   
-  ## Screenshots
+## Screenshots
 
   ![Screenshot 2024-01-09 123419](https://github.com/Archishmaan74/MealFull/assets/59467495/bdb54b68-d7b1-416e-8a48-e3827cbbae3e)
   
