@@ -32,6 +32,10 @@ Database structure:- <br />
   "carbs": 38,
   "sno": 6
   }
+
+Admin Credentials:- <br />
+- Username = "Archishmaan"
+- Password = "12345"
   
   ## Screenshots
 
