@@ -31,4 +31,20 @@ Database structure:- <br />
   "correctedTerm": "Half Size Italian on Hoagie Roll",
   "carbs": 38,
   "sno": 6
-  }   
+  }
+
+Admin Credentials:- <br />
+- Username = "Archishmaan"
+- Password = "12345"
+  
+  ## Screenshots
+
+  ![Screenshot 2024-01-09 123419](https://github.com/Archishmaan74/MealFull/assets/59467495/bdb54b68-d7b1-416e-8a48-e3827cbbae3e)
+  
+  ![newfooditems](https://github.com/Archishmaan74/MealFull/assets/59467495/91c651b3-eed5-489a-bb15-75b1fe143722)
+  
+  ![Screenshot 2024-01-09 123604](https://github.com/Archishmaan74/MealFull/assets/59467495/de2488d0-5bff-41f3-aa34-52a6b009d87f)
+
+  ![Screenshot 2024-01-09 123644](https://github.com/Archishmaan74/MealFull/assets/59467495/bd86d6af-05ae-4bf5-975c-a1a7e9993fd1)
+
+  
