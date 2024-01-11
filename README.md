@@ -4,11 +4,11 @@
 To test, contribute or just see what we did follow few easy steps:
 - clone the repository
 - cd to the directory with the repository
+- Open separate terminals to run backend and frontend.
 - run `npm i`
 - run the backend server using this command: 
   `nodemon start`
-- Open separate terminals to run backend and frontend.
-- run the app using `ng s -o`
+- run the frontend using `ng s -o`
 - use `npm i mongodb@4` to install mongodb in backend
 - for cross origin resource sharing use `npm i cors` in backend
 - enjoy!
