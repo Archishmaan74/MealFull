@@ -4,16 +4,16 @@
 To test, contribute or just see what we did follow few easy steps:
 - clone the repository
 - cd to the directory with the repository
+- Open separate terminals to run backend and frontend.
 - run `npm i`
 - run the backend server using this command: 
   `nodemon start`
-- Open separate terminals to run backend and frontend.
-- run the app using `ng s -o`
+- run the frontend using `ng s -o`
 - use `npm i mongodb@4` to install mongodb in backend
 - for cross origin resource sharing use `npm i cors` in backend
 - enjoy!
 
-MEAN stack website of restaurant franchise.Properties provided:- <br />
+MEAN stack application for calculating calories and carbs in your meal. Properties provided:- <br />
 - Single Page Application (used AngularJS routing)
 - Used guard for authentication
 - Database Maintaned named as Foodie and collections as food & dietchart (using mongodb)
@@ -37,7 +37,7 @@ Admin Credentials:- <br />
 - Username = "Archishmaan"
 - Password = "12345"
   
-  ## Screenshots
+## Screenshots
 
   ![Screenshot 2024-01-09 123419](https://github.com/Archishmaan74/MealFull/assets/59467495/bdb54b68-d7b1-416e-8a48-e3827cbbae3e)
   
