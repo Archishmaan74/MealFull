@@ -1,7 +1,7 @@
 # MealFull - Diet calculating app
 
 ## Getting Started
-To test, contribute or just see what we did follow few easy steps:
+To test, contribute or just see what I did follow few easy steps:
 - clone the repository
 - cd to the directory with the repository
 - Open separate terminals to run backend and frontend.
